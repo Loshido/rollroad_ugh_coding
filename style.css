@@ -14,6 +14,7 @@ body{
     font-weight: 300;
     color: #fff;
     background-color: #111111;
+    background-image: radial-gradient(#111111E0 2px, transparent 2px);
 }
 
 body > header{
@@ -73,6 +74,7 @@ body > header > h2{
 body > section{
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 25px));
+    align-items: center;
     gap: 50px;
 }
 body > section > img{
@@ -82,6 +84,15 @@ body > section > img{
 }
 body > section > legend{
     padding: 150px 50px;
+}
+body > section > legend > h1{
+    font-size: 3em;
+    line-height: 125%;
+}
+body > section > legend > p{
+    margin-top: 25px;
+    font-size: 1em;
+    line-height: 175%;
 }
 
 @media (width < 800px) {
@@ -94,12 +105,17 @@ body > section > legend{
         display: flex;
         flex-direction: column;
         gap: 25px;
+        padding-bottom: 50px;
     }
     body > section:nth-child(2n){
         flex-direction: column-reverse;
     }
     body > section > legend{
-        padding: 50px;
+        padding: 50px 25px;
+        text-align: center;
+    }
+    body > section > legend > h1.long{
+        font-size: 2em;
     }
     body > section > img{
         padding: 0 50px;
