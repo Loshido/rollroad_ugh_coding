@@ -83,3 +83,25 @@ body > section > img{
 body > section > legend{
     padding: 150px 50px;
 }
+
+@media (width < 800px) {
+    body > header > h2{
+        max-width: unset;
+        padding: 0 25px;
+        text-align: center;
+    }
+    body > section{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    body > section:nth-child(2n){
+        flex-direction: column-reverse;
+    }
+    body > section > legend{
+        padding: 50px;
+    }
+    body > section > img{
+        padding: 0 50px;
+    }
+}
