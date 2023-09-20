@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #82C7A5;
+    --blue: #0145AC;
+}
+
+body{
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #fff;
+    background-color: #111111;
+}
+
+body > header{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+body > header > div.anim{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+body > header > div.anim > h1{
+    font-size: 64px;
+    font-weight: 800;
+}
+body > header > div.anim > div.road{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 15px;
+    background-color: #292929;
+}
+body > header > div.anim > div.path{
+    z-index: 2;
+    position: absolute;
+    bottom: 5px;
+    left: -10%;
+
+    width: 10%;
+    height: 5px;
+    background-color: #fff;
+    animation: to-left 2s linear infinite;
+}
+body > header > div.anim > div.path:nth-child(2){animation-delay: 666ms;}
+body > header > div.anim > div.path:nth-child(3){animation-delay: 1333ms;}
+
+@keyframes to-left {
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+body > header > h2{
+    max-width: 25%;
+    text-align: justify;
+}
+
+body > section{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 25px));
+    gap: 50px;
+}
+body > section > img{
+    padding: 50px;
+    width: 100%;
+    height: auto;
+}
+body > section > legend{
+    padding: 150px 50px;
+}
