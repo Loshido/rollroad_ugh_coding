@@ -17,7 +17,7 @@ So, by applying this principle at large scale, wasted time and travel time will 
 
 ![aaa](./img/fav_low.png) | We started a algorithm that is supposed to simulate the flow of cars on the road with and without balancing the flow
 --- | ---
-![bbb](./img/road_low.png) | [RollRoad](./solution/index.html)
+![bbb](./img/road_low.png) | [Solution not finished](./solution/index.html)
 
 
 
